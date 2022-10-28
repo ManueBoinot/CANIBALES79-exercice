@@ -10,6 +10,8 @@
   <title>CANIBALES 79 NIORT - Canicross canivtt canimarche Deux-Sevres</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/cfc69e35cf.js" crossorigin="anonymous"></script>
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -22,22 +24,69 @@
 
   <!-- --------------- HEADER ---------------------------------------------------------------------- -->
   <header>
-    <nav class="navbar navbar-expand-md bg-light fixed-top">
-      <div class="container-md">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="/index.html" class="navbar-brand">Canibales79</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul>
-            <li class="nav-link">Accueil</li>
-            <li class="nav-link">Le Club</li>
-            <li class="nav-link">Les Disciplines</li>
-          </ul>
+
+    <div class="container">
+
+      <!-- --------------- ROW 1 BANDEAU HEADER --------------------- -->
+      <div class="row d-flex align-items-start g-0 text-center"
+        style="background-image: url(images/photos/photo_canivtt_plage_rouge.jpg); background-size: cover; background-position-y: 70%; height: 20vh;">
+
+        <div class="col ps-2" id="brand">
+          <a href="/index.html" class="navbar-brand"><img src="images/logos/logo_canibales79.jpg" alt="logo canibales79"
+              style="width: 150px;" class="pt-3">
+          </a>
         </div>
+
+        <div class="col offset-1 d-flex justify-content-center pt-3" id="bouton-bandeau">
+
+          <a href="https://www.facebook.com/Canibales79"><i class="logos-reseaux-header fa-brands fa-square-facebook"
+              style="font-size: 50px; color: white;"></i></a>
+
+          <a href="https://www.instagram.com/canibales_79/"><i
+              class="logos-reseaux-header fa-brands fa-square-instagram ms-2"
+              style="font-size: 50px; color: white;"></i></a>
+
+          <a href="/login.html" class="pt-1 ms-4 me-1"><i class="fa-solid fa-user"
+              style="font-size: 27px; color: #F60407; background-color: black; padding: 7px;"></i></a>
+
+        </div>
+
       </div>
-    </nav>
+
+      <!-- --------------- ROW 2 NAVBAR HEADER --------------------- -->
+
+      <div class="row g-0 align-items-start">
+        <div class="col-7">
+          <nav class="navbar navbar-expand-md">
+
+            <button class="navbar-toggler ms-4" style="font-size: 1.6rem;" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="mt-3">
+                <li class="nav-link mt-2" id="navbar-btn-accueil">ACCUEIL</li>
+                <li class="nav-link mt-2" id="navbar-btn-quisommesnous">QUI SOMMES-NOUS ?</li>
+                <li class="nav-link mt-2" id="navbar-btn-vieduclub">VIE DU CLUB</li>
+                <li class="nav-link mt-2" id="navbar-btn-info">INFOS PRATIQUES</li>
+                <li class="nav-link mt-2" id="navbar-btn-discipline">LES DISCIPLINES</li>
+                <li class="nav-link mt-2" id="navbar-btn-faq">FOIRE AUX QUESTIONS</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="col-5 text-center pt-2">
+          <div class="btn"><a href="/contact.html" class="py-2 px-3 rounded"
+              style="font-size: 1rem; color: white; text-decoration: none; background-color: black;"><i class="fa-regular fa-envelope pe-2"></i>Contact</a>
+          </div>
+        </div>
+        </nav>
+
+      </div>
+
+    </div>
   </header>
 
   <main>
