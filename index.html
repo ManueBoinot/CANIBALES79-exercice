@@ -28,22 +28,22 @@
     <div class="container-fluid">
 
       <!-- --------------- ROW 1 BANDEAU HEADER --------------------- -->
-      <div class="row d-flex align-items-start g-0 text-center"
-        style="background-image: url(images/photos/photo_canivtt_plage_rouge.jpg); background-size: cover; background-position-y: 70%; height: 20vh;">
+      <div class="row d-flex align-items-start text-center"
+        style="background: linear-gradient(rgba(222,0,0,0.5), rgba(0, 0, 0, 0)), url(images/photos/photo_canivtt_plage_nb2.jpg); background-size: cover; background-position-y: 70%; height: 30vh;">
 
-        <div class="col ps-2" id="brand">
+        <div class="col ps-2 text-center" id="brand">
           <a href="/index.html" class="navbar-brand"><img src="images/logos/logo_canibales79.jpg" alt="logo canibales79"
-              style="width: 150px;" class="pt-3">
+              style="width: 250px;" class="pt-2">
           </a>
         </div>
 
-        <div class="col offset-1 d-flex justify-content-center pt-3" id="bouton-bandeau">
+        <div class="col offset-1 d-flex justify-content-center pt-3 mx-auto" id="bouton-bandeau">
           <a href="https://www.facebook.com/Canibales79"><i class="logos-reseaux-header fa-brands fa-square-facebook"
               style="font-size: 50px; color: white;"></i></a>
           <a href="https://www.instagram.com/canibales_79/"><i
-              class="logos-reseaux-header fa-brands fa-square-instagram ms-2"
+              class="logos-reseaux-header fa-brands fa-square-instagram ms-3 me-5"
               style="font-size: 50px; color: white;"></i></a>
-          <a href="/login.html" class="pt-1 ms-4 me-1"><i class="fa-solid fa-user"
+          <a href="/login.html" class="pt-1 ms-5 me-1"><i class="fa-solid fa-user"
               style="font-size: 27px; color: #F60407; background-color: black; padding: 7px;"></i></a>
         </div>
 
@@ -51,37 +51,49 @@
 
       <!-- --------------- ROW 2 NAVBAR HEADER --------------------- -->
 
-      <div class="row g-0">
-        <nav class="navbar navbar-expand-md align-items-start">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <div class="col-7">
-            <button class="navbar-toggler ms-4" style="font-size: 1.6rem;" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="mt-3">
-                <li class="nav-link mt-2" id="navbar-btn-accueil">ACCUEIL</li>
-                <li class="nav-link mt-2" id="navbar-btn-quisommesnous">QUI SOMMES-NOUS ?</li>
-                <li class="nav-link mt-2" id="navbar-btn-vieduclub">VIE DU CLUB</li>
-                <li class="nav-link mt-2" id="navbar-btn-info">INFOS PRATIQUES</li>
-                <li class="nav-link mt-2" id="navbar-btn-discipline">LES DISCIPLINES</li>
-                <li class="nav-link mt-2" id="navbar-btn-faq">FOIRE AUX QUESTIONS</li>
-              </ul>
-            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-uppercase" href="club.html" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Le club
+                </a>
+                <ul class="dropdown-menu text-center" style="border: none;">
+                  <li><a class="dropdown-item" href="club.html/#qui-sommes-nous">Qui sommes-nous ?</a></li>
+                  <li><a class="dropdown-item" href="club.html/#vie-du-club">Vie du club</a></li>
+                  <li><a class="dropdown-item" href="club.html/#infos-pratiques">Infos pratiques</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase" aria-current="page" href="disciplines.html">Les
+                  disciplines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 fst-italic" type="search" placeholder="Ex. : matériel" aria-label="search"
+                style="font-size: 0.7rem;">
+              <button class="btn btn-outline-success border-dark" type="submit"
+                style="font-size: 0.7rem; color: rgb(77, 77, 77);">Rechercher</button>
+            </form>
           </div>
-
-          <div class="col">
-            <div class="btn"><a href="/contact.html" class="p-2 rounded"
-                style="color: white; text-decoration: none; background-color: black;"><i
-                  class="fa-regular fa-envelope pe-2"></i>Contact</a>
-            </div>
-          </div>
-
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -91,11 +103,11 @@
 
     <!-- --------------- SECTION CARROUSEL PHOTOS ----------------------------------------------------- -->
     <section id="carrousel-photos">
-      <div class="container-fluid">
+      <div class="container-fluid p-0">
         <div class="row">
           <div class="col">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner" style="height: 40vh;">
+              <div class="carousel-inner" style="height: fit-content; max-height: 60vh;">
                 <div class="carousel-item active">
                   <img src="images/photos/photo_canivtt_chemin.jpg" class="d-block w-100" alt="canivtt chemin">
                 </div>
@@ -103,7 +115,8 @@
                   <img src="images/photos/photo_4_chiens.jpg" class="d-block w-100" alt="portraits 4 chiens">
                 </div>
                 <div class="carousel-item">
-                  <img src="images/photos/photo_canicross_didier.jpg" class="d-block w-100" alt="canicross famille didier">
+                  <img src="images/photos/photo_canicross_didier.jpg" class="d-block w-100"
+                    alt="canicross famille didier">
                 </div>
                 <div class="carousel-item">
                   <img src="images/photos/photo_groupe_canimarche.jpg" class="d-block w-100" alt="groupe canimarche ">
@@ -125,17 +138,40 @@
             </div>
           </div>
         </div>
-
-
       </div>
-
-
-
     </section>
 
     <!-- --------------- SECTION MESSAGE ACCUEIL ------------------------------------------------------- -->
     <section id="message-accueil">
+      <div class="container mx-auto py-3">
+        <div class="row text-center">
+          <div class="col">
 
+            <h1 class="fs-5 text-uppercase my-3">Bienvenue chez les Canibales 79 !</h1>
+
+            <p style="font-size: 0.9rem;">Athlètes chevronnés ou sportifs du dimanche,<br>
+              Jeunes, moyen jeunes et moins jeunes,<br>
+              Formats de poche comme grands gabarits,<br>
+              <strong>CANICROSS, CANIVTT et CANIMARCHE</strong><br>
+              sont faits <strong>pour vous et votre chien</strong>!<br>
+              Chez les CANIBALES 79, il y en a pour toutes les ambitions :<br>
+              Vous aimez la <strong>compétition</strong>, progresser sans cesse et votre chien déborde d’énergie ?<br>
+              Vous préférez <strong>prendre l’air</strong> et profiter du paysage avec votre compagnon à 4 pattes ?<br>
+              <strong>Un peu des deux</strong> ?<br>
+              Vous êtes au bon endroit dans tous les cas !<br>
+              Pour plus d’informations, explorez nos rubriques et notre FAQ,<br>
+              et n’hésitez pas à nous contacter<br>
+              pour toute question.<br>
+              À très bientôt chez les <strong>CANIBALES 79</strong> !
+            </p>
+
+            <button type="button" class="btn btn-outline-danger m-2">Foire aux questions</button>
+
+            <button type="button" class="btn btn-danger m-2">Contactez-nous</button>
+
+          </div>
+        </div>
+      </div>
 
 
     </section>
