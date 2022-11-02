@@ -3,7 +3,11 @@
     font-family: "athiti", arial, "sans-serif";
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 700 !important;
 }
 
@@ -11,11 +15,16 @@ h1, h2, h3, h4, h5 {
     font-weight: 700 !important;
 }
 
-p, button {
+p,
+button {
     font-size: larger !important;
 }
 
-a, .nav-link, .nav-link li, .navbar li a {
+a,
+.nav-link,
+.nav-link li,
+.navbar li a,
+a i {
     transition: 0.4s !important;
 }
 
@@ -24,7 +33,13 @@ a:hover {
     transition: 0.4s !important;
 }
 
-.nav-link:hover, .navbar li a:hover {
+#boutons-bandeau i:hover {
+    font-size: 90px !important;
+    transition: 0.3s !important;
+}
+
+.nav-link:hover,
+.navbar li a:hover {
     transition: 0.4s !important;
     color: #F60407 !important;
 }
@@ -36,7 +51,8 @@ a:hover {
 
 @media screen and (min-width: 992px) {
 
-    #bandeau-header, footer {
+    #bandeau-header,
+    footer {
         padding: 10px 200px !important;
     }
 
@@ -70,7 +86,7 @@ a:hover {
 
     #carrousel-photos {
         position: absolute;
-        top: 400px;
+        top: 430px;
         left: 100px;
         width: 30vw;
     }
@@ -91,7 +107,8 @@ a:hover {
         justify-content: right;
     }
 
-    #message-accueil p, #message-accueil h1 {
+    #message-accueil p,
+    #message-accueil h1 {
         text-align: right !important;
     }
 
@@ -99,7 +116,9 @@ a:hover {
         font-size: 200% !important;
     }
 
-    #message-accueil p, #message-accueil button, .card-text {
+    #message-accueil p,
+    #message-accueil button,
+    .card-text {
         font-size: larger !important;
     }
 
@@ -126,7 +145,8 @@ a:hover {
         padding-bottom: 40px !important;
     }
 
-    #col-actu-fslc, #col-actu-presse {
+    #col-actu-fslc,
+    #col-actu-presse {
         width: 50% !important;
     }
 }
