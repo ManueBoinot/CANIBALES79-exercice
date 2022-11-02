@@ -11,6 +11,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cfc69e35cf.js" crossorigin="anonymous"></script>
   <link href="style.css" rel="stylesheet">
 </head>
@@ -28,7 +31,7 @@
     <div class="container-fluid">
 
       <!-- --------------- ROW 1 BANDEAU HEADER --------------------- -->
-      <div class="row d-flex align-items-start text-center"
+      <div class="row d-flex align-items-start text-center" id="bandeau-header"
         style="background: linear-gradient(rgba(222,0,0,0.5), rgba(0, 0, 0, 0)), url(images/photos/photo_canivtt_plage_nb2.jpg); background-size: cover; background-position-y: 70%; height: 30vh;">
 
         <div class="col ps-2 text-center" id="brand">
@@ -37,13 +40,13 @@
           </a>
         </div>
 
-        <div class="col offset-1 d-flex justify-content-center pt-3 mx-auto" id="bouton-bandeau">
+        <div class="col offset-1 d-flex justify-content-center pt-3 mx-auto" id="boutons-bandeau">
           <a href="https://www.facebook.com/Canibales79"><i class="logos-reseaux-header fa-brands fa-square-facebook"
               style="font-size: 50px; color: white;"></i></a>
           <a href="https://www.instagram.com/canibales_79/"><i
               class="logos-reseaux-header fa-brands fa-square-instagram ms-3 me-5"
               style="font-size: 50px; color: white;"></i></a>
-          <a href="/login.html" class="pt-1 ms-5 me-1"><i class="fa-solid fa-user"
+          <a href="/login.html" class="pt-1 ms-5 me-1"><i class="fa-solid fa-user" id="connexion-btn"
               style="font-size: 27px; color: #F60407; background-color: black; padding: 7px;"></i></a>
         </div>
 
@@ -51,7 +54,7 @@
 
       <!-- --------------- ROW 2 NAVBAR HEADER --------------------- -->
 
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <button class="navbar-toggler mx-auto bg-light" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -61,7 +64,7 @@
 
           <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link active text-uppercase" style="color: white;" aria-current="page"
                   href="index.html">Accueil</a>
@@ -71,29 +74,21 @@
                   data-bs-toggle="dropdown" aria-expanded="false">
                   Le club
                 </a>
-                <ul class="dropdown-menu text-center" style="border: none;">
-                  <li><a class="dropdown-item" href="club.html/#qui-sommes-nous">Qui sommes-nous ?</a></li>
-                  <li><a class="dropdown-item" href="club.html/#vie-du-club">Vie du club</a></li>
-                  <li><a class="dropdown-item" href="club.html/#infos-pratiques">Infos pratiques</a></li>
+                <ul class="dropdown-menu text-start bg-black" style="border: none;">
+                  <li><a class="dropdown-item text-white" href="club.html/#qui-sommes-nous">Qui sommes-nous ?</a></li>
+                  <li><a class="dropdown-item text-white" href="club.html/#vie-du-club">Vie du club</a></li>
+                  <li><a class="dropdown-item text-white" href="club.html/#infos-pratiques">Infos pratiques</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link active text-uppercase" style="color: white;" aria-current="page"
-                  href="disciplines.html">Les
-                  disciplines</a>
+                  href="disciplines.html">Les disciplines</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active text-uppercase" style="color: white;" aria-current="page"
                   href="contact.html">Contact</a>
               </li>
             </ul>
-
-            <form class="d-flex" role="search">
-              <input class="form-control me-2 fst-italic" type="search" placeholder="Ex. : matériel" aria-label="search"
-                style="font-size: 0.7rem;">
-              <button class="btn btn-outline-success border-light" type="submit"
-                style="font-size: 0.7rem; color: white;">Rechercher</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -105,50 +100,47 @@
   <main>
 
     <!-- --------------- SECTION CARROUSEL PHOTOS ----------------------------------------------------- -->
+
+
     <section id="carrousel-photos">
       <div class="container-fluid p-0">
-        <div class="row">
-          <div class="col">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner" style="height: fit-content; max-height: 70vh;">
-                <div class="carousel-item active">
-                  <img src="images/photos/photo_canivtt_chemin.jpg" class="d-block w-100" alt="canivtt chemin">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/photos/photo_4_chiens.jpg" class="d-block w-100" alt="portraits 4 chiens">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/photos/photo_canicross_didier.jpg" class="d-block w-100"
-                    alt="canicross famille didier">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/photos/photo_groupe_canimarche.jpg" class="d-block w-100" alt="groupe canimarche">
-                </div>
-                <div class="carousel-item">
-                  <img src="images/photos/photo_canicross_bois.jpg" class="d-block w-100" alt="canicross bois">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/photos/photo_canivtt_chemin.jpg" class="d-block w-100" alt="canivtt chemin">
+            </div>
+            <div class="carousel-item">
+              <img src="images/photos/photo_4_chiens.jpg" class="d-block w-100" alt="portraits 4 chiens">
+            </div>
+            <div class="carousel-item">
+              <img src="images/photos/photo_canicross_didier.jpg" class="d-block w-100" alt="canicross famille didier">
+            </div>
+            <div class="carousel-item">
+              <img src="images/photos/photo_groupe_canimarche.jpg" class="d-block w-100" alt="groupe canimarche">
+            </div>
+            <div class="carousel-item">
+              <img src="images/photos/photo_canicross_bois.jpg" class="d-block w-100" alt="canicross bois">
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
 
     <!-- --------------- SECTION MESSAGE ACCUEIL ------------------------------------------------------- -->
-    <section id="message-accueil" class="mx-auto py-3">
+    <section id="message-accueil-section" class="mx-auto py-3">
       <div class="container">
         <div class="row text-center">
-          <div class="col">
+          <div class="col" id="message-accueil">
 
             <h1 class="fs-5 text-uppercase my-3">Bienvenue chez les Canibales 79 !</h1>
 
@@ -156,7 +148,7 @@
               Jeunes, moyen jeunes et moins jeunes,<br>
               Formats de poche comme grands gabarits,<br>
               <strong>CANICROSS, CANIVTT et CANIMARCHE</strong><br>
-              sont faits <strong>pour vous et votre chien</strong>!<br>
+              sont faits <strong>pour vous et votre chien</strong> !<br>
               Chez les CANIBALES 79, il y en a pour toutes les ambitions :<br>
               Vous aimez la <strong>compétition</strong>, progresser sans cesse et votre chien déborde d’énergie ?<br>
               Vous préférez <strong>prendre l’air</strong> et profiter du paysage avec votre compagnon à 4 pattes ?<br>
@@ -168,11 +160,13 @@
               À très bientôt chez les <strong>CANIBALES 79</strong> !
             </p>
 
-            <button type="button" class="btn m-2" style="color: #F60407; border:1px solid #F60407;">Foire aux
-              questions</button>
+            <div id="intro-btn">
+              <button type="button" class="btn m-2" style="color: #F60407; border:1px solid #F60407;">Foire aux
+                questions</button>
 
-            <button type="button" class="btn m-2"
-              style="background-color:#F60407; color: white;">Contactez-nous</button>
+              <button type="button" class="btn m-2"
+                style="background-color:#F60407; color: white;">Contactez-nous</button>
+            </div>
 
           </div>
         </div>
@@ -201,7 +195,7 @@
 
                     <div class="col p-0" style="height: fit-content; max-height: 212px; min-height: 180px;">
                       <div class="card-body p-0 ms-3">
-                        <h3 class="card-title fs-5 fw-bold">QUI SOMMES-NOUS ?</h3>
+                        <h3 class="card-title fs-5 ">QUI SOMMES-NOUS ?</h3>
                         <p class="card-text">Historique de l'association et présentation de son super Bureau.</p>
                       </div>
                     </div>
@@ -221,7 +215,7 @@
 
                     <div class="col p-0" style="height: fit-content; max-height: 212px; min-height: 180px;">
                       <div class="card-body p-0 ms-3">
-                        <h3 class="card-title fs-5 fw-bold">VIE DU CLUB</h3>
+                        <h3 class="card-title fs-5 ">VIE DU CLUB</h3>
                         <p class="card-text">Chez les Canibales 79, les maîtres-mots sont PLAISIR et CONVIVIALITÉ. Voyez
                           par vous-mêmes !</p>
                       </div>
@@ -241,7 +235,7 @@
 
                     <div class="col p-0" style="height: fit-content; max-height: 212px; min-height: 180px;">
                       <div class="card-body p-0 ms-3">
-                        <h3 class="card-title fs-5 fw-bold">INFOS PRATIQUES</h3>
+                        <h3 class="card-title fs-5 ">INFOS PRATIQUES</h3>
                         <p class="card-text">Entrainement, compétitions, tarifs des licences et règlement intérieur,
                           c'est par ici !</p>
                       </div>
@@ -262,7 +256,7 @@
 
                     <div class="col p-0" style="height: fit-content; max-height: 212px; min-height: 180px;">
                       <div class="card-body p-0 ms-3">
-                        <h3 class="card-title fs-5 fw-bold">LES DISCIPLINES</h3>
+                        <h3 class="card-title fs-5 ">LES DISCIPLINES</h3>
                         <p class="card-text">Définitions des disciplines, bonnes pratiques et réglementation.</p>
                       </div>
                     </div>
@@ -272,7 +266,7 @@
             </div>
 
             <!-- --------------- RUBRIQUE FAQ --------------------- -->
-            <div class="card mx-auto my-4 bg-black text-center fw-bold"
+            <div class="card mx-auto my-4 bg-black text-center" id="faq-btn"
               style="width: 18rem; color: white; border: 1px solid #F60407; border-radius: 0;">
               <div class="card-body">
                 <h3 class="card-title fs-5">FOIRE AUX QUESTIONS</h3>
@@ -289,29 +283,29 @@
     </section>
 
     <!-- --------------- SECTION ACTUALITE -------------------------------------------------------------- -->
-    <section id="actualité" class="mx-auto">
+    <section id="actualite" class="mx-auto">
       <div class="container text-center p-4">
         <div class="row">
-          <div class="col-12 p-0">
+          <div class="col-12 p-0" id="col-actu-fslc">
 
-            <h2 class="text-center py-3 fw-bold" style="color: black;">ACTUALITÉ</h2>
+            <h2 class="text-center py-3 " style="color: black;">ACTUALITÉ</h2>
 
             <!-- --------------- ARTICLE PASS DECOUVERTE --------------------- -->
             <div class="card mx-auto bg-light" style="width: 300px; box-shadow: 0 0 15px black;">
               <h3 class="card-header fst-italic fs-5" style="background-color: #F60407; color: white;">À LA UNE</h3>
               <div class="card-body p-2 d-flex flex-column align-items-center">
-                <h4 class="card-title fw-bold fs-4">PASS DÉCOUVERTE FSLC</h4>
+                <h4 class="card-title  fs-4">PASS DÉCOUVERTE FSLC</h4>
                 <p class="card-text">3 essais <strong>offerts</strong> et vous êtes <strong>couverts</strong> !</p>
                 <img src="images/photos/photo_pass.png" alt="illustration pass découverte FSLC 3 essais offerts"
                   width="200px">
-                <a href="https://www.fslc-canicross.net/rentree-sportive-fslc/" class="btn px-4 fw-bold"
+                <a href="https://www.fslc-canicross.net/rentree-sportive-fslc/" class="btn px-4 "
                   style="background-color: #F60407; color: white; position: relative; bottom: 20px; box-shadow: 0 0 20px grey;">+
                   d'infos</a>
               </div>
             </div>
           </div>
 
-          <div class="col p-0">
+          <div class="col p-0" id="col-actu-presse">
 
             <!-- --------------- CARROUSEL ARTICLES PRESSE --------------------- -->
             <div id="carouselExampleDark" class="carousel carousel-dark slide mt-3" data-bs-ride="carousel">
@@ -331,12 +325,12 @@
                   <div class="card mx-auto bg-light" style="width: 250px;">
                     <h3 class="card-header fst-italic m-0" style="font-size: 0.9rem;">ON PARLE DE NOUS</h3>
                     <div class="card-body p-2 d-flex flex-column align-items-center">
-                      <h4 class="card-title fw-bold m-0" style="font-size: 0.9rem;">LA NOUVELLE RÉPUBLIQUE</h4>
+                      <h4 class="card-title  m-0" style="font-size: 0.9rem;">LA NOUVELLE RÉPUBLIQUE</h4>
                       <p class="card-text fst-italic" style="font-size: 0.8rem;">16/05/2022</p>
                       <img src="images/presse/article-nr-2022.jpg"
                         alt="article nouvelle republique course canicross des canibales79 mai 2022" width="200px">
                       <a href="https://www.lanouvellerepublique.fr/deux-sevres/commune/souvigne-79/saint-maixent-le-canicross-fait-son-retour-dans-la-foret-de-l-hermitain"
-                        class="btn px-4 fw-bold"
+                        class="btn px-4 "
                         style="background-color: #F60407; color: white; position: relative; bottom: 30px; box-shadow: 0 0 20px grey;">Lire
                         l'article</a>
                     </div>
@@ -348,12 +342,12 @@
                   <div class="card mx-auto bg-light" style="width: 250px;">
                     <h3 class="card-header fst-italic m-0" style="font-size: 0.9rem;">ON PARLE DE NOUS</h3>
                     <div class="card-body p-2 d-flex flex-column align-items-center">
-                      <h4 class="card-title fw-bold m-0" style="font-size: 0.9rem;">OUEST FRANCE</h4>
+                      <h4 class="card-title  m-0" style="font-size: 0.9rem;">OUEST FRANCE</h4>
                       <p class="card-text fst-italic" style="font-size: 0.8rem;">13/05/2022</p>
                       <img src="images/presse/article-ouestfr-2022.jpg"
                         alt="article ouest france course canicross des canibales79 mai 2022" width="200px">
                       <a href="https://www.ouest-france.fr/nouvelle-aquitaine/souvigne-79800/seconde-edition-du-canicross-de-lhermitain-12cbc6cc-ea43-4d64-aaa0-e43d416e06a5"
-                        class="btn px-4 fw-bold"
+                        class="btn px-4 "
                         style="background-color: #F60407; color: white; position: relative; bottom: 30px; box-shadow: 0 0 20px grey;">Lire
                         l'article</a>
                     </div>
@@ -365,12 +359,12 @@
                   <div class="card mx-auto bg-light" style="width: 250px;">
                     <h3 class="card-header fst-italic m-0" style="font-size: 0.9rem;">ON PARLE DE NOUS</h3>
                     <div class="card-body p-2 d-flex flex-column align-items-center">
-                      <h4 class="card-title fw-bold m-0" style="font-size: 0.9rem;">LA NOUVELLE RÉPUBLIQUE</h4>
+                      <h4 class="card-title  m-0" style="font-size: 0.9rem;">LA NOUVELLE RÉPUBLIQUE</h4>
                       <p class="card-text fst-italic" style="font-size: 0.8rem;">23/10/2017</p>
                       <img src="images/presse/article-nr-2017.jpg"
                         alt="article nouvelle republique course canicross des canibales79 octobre 2017" width="200px">
                       <a href="https://www.ouest-france.fr/nouvelle-aquitaine/souvigne-79800/seconde-edition-du-canicross-de-lhermitain-12cbc6cc-ea43-4d64-aaa0-e43d416e06a5"
-                        class="btn px-4 fw-bold"
+                        class="btn px-4 "
                         style="background-color: #F60407; color: white; position: relative; bottom: 30px; box-shadow: 0 0 20px grey;">Lire
                         l'article</a>
                     </div>
@@ -404,10 +398,10 @@
 
 
             <h2 class="py-3">NOS PARTENAIRES</h2>
-            <p>Consultez notre rubrique et découvrez les <span class="fw-bold" style="color: #F60407;">avantages</span>
+            <p>Consultez notre rubrique et découvrez les <span class="" style="color: #F60407;">avantages</span>
               offerts par nos partenaires !</p>
 
-            <button type="button" class="btn fw-bold m-2"
+            <button type="button" class="btn  m-2"
               style="background-color: #F60407; color: white; border-radius: 0;">Voir la rubrique</button>
 
             <!-- --------------- CARROUSEL PARTENAIRES ---------------------  -->
@@ -492,7 +486,7 @@
 
       <div class="row">
         <div class="col text-start" style="font-size: 0.8rem;">
-          <h5 class="fw-bold my-1" style="font-size: 0.8rem;">PLAN DU SITE</h5>
+          <h5 class=" my-1" style="font-size: 0.8rem;">PLAN DU SITE</h5>
           <ul class="list-unstyled">
             <li class="footer-list-item"><a href="index.html" class="text-decoration-none"
                 style="color: white;">Accueil</a></li>
@@ -514,21 +508,20 @@
         </div>
 
         <div class="col offset-1 text-end" style="font-size: 0.8rem;">
-          <h5 class="fw-bold my-1" style="font-size: 0.8rem;">CANIBALES 79</h5>
+          <h5 class=" my-1" style="font-size: 0.8rem;">CANIBALES 79</h5>
           <p class="m-1">Association loi 1901</p>
           <p class="m-1">Présidente :<br>
             Laura GUILBERT</p>
           <p class="m-1">25 route de Chauray<br>
             79260 FRANÇOIS</p>
-          <p class="m-2"><a href="mailto:canibales79@gmail.com" class="text-decoration-none fw-bold"
+          <p class="m-2"><a href="mailto:canibales79@gmail.com" class="text-decoration-none "
               style="color: white;">canibales79@gmail.com</a></p>
-          <p class="m-0 text-end"><a href="https://www.facebook.com/Canibales79"><i class="logo-footer fa-brands fa-square-facebook"
+          <p class="m-0 text-end"><a href="https://www.facebook.com/Canibales79"><i
+                class="logo-footer fa-brands fa-square-facebook" style="font-size: 40px; color: white;"></i>
+            </a>
+            <a href="https://www.instagram.com/canibales_79/"><i class="logo-footer fa-brands fa-square-instagram p-1"
                 style="font-size: 40px; color: white;"></i>
-              </a>
-              <a href="https://www.instagram.com/canibales_79/"><i
-                class="logo-footer fa-brands fa-square-instagram p-1"
-                style="font-size: 40px; color: white;"></i>
-              </a>
+            </a>
           </p>
           <p class="m-2">Site réalisé par : Manue</p>
 

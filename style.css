@@ -1,0 +1,119 @@
+/* ------ GENERAL ------------------------------------- */
+* {
+    font-family: "athiti", arial, "sans-serif";
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700 !important;
+}
+
+.btn button {
+    font-weight: 700 !important;
+}
+
+p, button {
+    font-size: larger !important;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* ------ MEDIA QUERIES ------------------------------------- */
+
+/* --- DESKTOP ------------------------------ */
+
+@media screen and (min-width: 992px) {
+
+    #bandeau-header, footer {
+        padding: 10px 200px !important;
+    }
+
+    #bandeau-header {
+        height: 35vh !important;
+    }
+
+    .logos-reseaux-header {
+        font-size: 80px !important;
+    }
+
+    #connexion-btn {
+        font-size: 50px !important;
+        margin-top: 2px !important;
+        padding: 8px !important;
+    }
+
+    .navbar-nav a {
+        font-size: 1.5rem !important;
+        padding: 0 30px !important;
+    }
+
+    .navbar-brand img {
+        width: 400px !important;
+    }
+
+    #message-accueil-section {
+        position: relative;
+        height: 75vh;
+    }
+
+    #carrousel-photos {
+        position: absolute;
+        top: 400px;
+        left: 100px;
+        width: 30vw;
+    }
+
+    #carrousel-photos .carousel-item img {
+        width: 30vw !important;
+        max-height: 60vh !important;
+    }
+
+    #message-accueil {
+        position: absolute;
+        width: 50vw;
+        right: 80px;
+    }
+
+    #intro-btn {
+        display: flex;
+        justify-content: right;
+    }
+
+    #message-accueil p, #message-accueil h1 {
+        text-align: right !important;
+    }
+
+    #message-accueil h1 {
+        font-size: 200% !important;
+    }
+
+    #message-accueil p, #message-accueil button, .card-text {
+        font-size: larger !important;
+    }
+
+    #faq-btn {
+        width: fit-content !important;
+        padding: 20px;
+    }
+
+    #faq-btn a {
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    #actualite .row {
+        display: flex !important;
+        flex-wrap: wrap;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    #actualite h2 {
+        width: 200% !important;
+        margin: auto !important;
+        padding-bottom: 40px !important;
+    }
+
+    #col-actu-fslc, #col-actu-presse {
+        width: 50% !important;
+    }
+}
