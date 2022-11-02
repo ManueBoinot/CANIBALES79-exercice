@@ -15,6 +15,19 @@ p, button {
     font-size: larger !important;
 }
 
+a, .nav-link, .nav-link li, .navbar li a {
+    transition: 0.4s !important;
+}
+
+a:hover {
+    font-size: 110% !important;
+    transition: 0.4s !important;
+}
+
+.nav-link:hover, .navbar li a:hover {
+    transition: 0.4s !important;
+    color: #F60407 !important;
+}
 
 /* ---------------------------------------------------------------------- */
 /* ------ MEDIA QUERIES ------------------------------------- */
@@ -43,7 +56,7 @@ p, button {
 
     .navbar-nav a {
         font-size: 1.5rem !important;
-        padding: 0 30px !important;
+        padding: 10px 30px !important;
     }
 
     .navbar-brand img {
@@ -92,17 +105,17 @@ p, button {
 
     #faq-btn {
         width: fit-content !important;
-        padding: 20px;
+        padding: 20px !important;
     }
 
     #faq-btn a {
-        font-size: larger;
-        font-weight: bold;
+        font-size: larger !important;
+        font-weight: bold !important;
     }
 
     #actualite .row {
         display: flex !important;
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
         align-items: center !important;
         justify-content: center !important;
     }
